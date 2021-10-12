@@ -1,15 +1,14 @@
 #include<stdio.h>
 int main()
 {
-	double a=22.0/7.0, b=22.0/6.0, c=22.0/7.0;
-	if (a==b && b==c){
-		printf("Equilateral triangle.\n");
-	}else if(a==b || a==c || b==c){
-		printf("Isosceles triangle.\n");
-	}else if (a!=b!=c){
-		printf("scalene triangle.\n");
-	}else{
-		printf("Invalid input.\n");
+	int n=1234;
+	int i;
+	while(n>0)
+	{
+		i=n%10;
+		printf("%d",i);
+		n=n/10;
+
 	}
 	return 0;
 }
