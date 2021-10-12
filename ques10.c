@@ -1,15 +1,13 @@
 #include<stdio.h>
-
 int main()
 {
-	int n= 1234;
-	int digits= 0;
-	while(n)
-	{
-		n=n/10;
-		digits++;
+	char ch=2;
+	if ((ch>=97 && ch<=122)|| (ch>=65 && ch<=90)){
+		printf("the enterd character is an alphabet. %c\n",ch);
+	}else if (ch>=0 && ch<=9){
+		printf("the enterd character is a digit. %c\n",ch);
+	}else{
+		printf("the entered character is something else.\n");
 	}
-
-	printf("The number of digits is %d\n",digits);
 	return 0;
 }

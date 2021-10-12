@@ -1,15 +1,17 @@
 #include<stdio.h>
 int main()
 {
-	int n=13;
-	for(int i=2;i<n;i++)
-	{
-		int x = n%i;
-		if (x==0)
-			printf("Not a prime no.\n");			
-		else
-			printf("Prime no.\n");
-		break;
+	int n=407;
+	int a=n%10;
+	int x=n/10;
+	int b=x%10;
+	x=x/10;
+	int c=x%10;
+	if(((a*a*a)+(b*b*b)+(c*c*c))==n){
+		printf("armstrong number.\n");
+	}else{
+		printf("not an armstrong number.\n");
 	}
 	return 0;
+
 }

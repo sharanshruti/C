@@ -1,18 +1,22 @@
 #include<stdio.h>
 int main()
 {
-	int n=12;
-	for (int i=1;i<n;i++)
-	{
-		int x=0;
-		for(int j=2;j<1;j++)
-		{
-			if(i%j!=0)
-				printf("%d\n",i);
-		}	
+	int sal=30000;
+	if(sal>0 && sal<30000){
+		double x=(0.2*sal)+(0.3*sal);
+		double y=x+sal;
+		printf("Gross salary is %g\n.",y);
 
-	}	
-	
+	}else if(sal>30000 && sal<60000){
+		double x=(0.25*sal)+(0.35*sal);
+		double y=x+sal;
+		printf("Gross salary is %g\n.",y);
+	}else if(sal>60000){
+		double x=(0.3*sal)+(0.4*sal);
+		double y=x+sal;
+		printf("gross salary is %g\n.",y);
+	}else{
+		printf("invalid input.\n")
+	}
 	return 0;
-
-}
+}	

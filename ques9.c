@@ -1,16 +1,15 @@
 #include<stdio.h>
 int main()
 {
-	int a=5, b=15;
-	int max=a>b?a:b, lcm=max;
-
-	for ( ; ; lcm+=max)
-	{
-		if(lcm%a==0 && lcm%b==0)
-			break;
+	char ch='2';
+	if (ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u'  || ch=='A'  || ch=='E'  || ch=='I'  || ch=='O'  || ch=='U' ){
+		printf("alphabet is a vowel.\n");
+	}else if((ch>=97 && ch<=122)|| (ch>=65 && ch<=90)){
+		printf("alphabet is a consonant.\n");
 	}
-	double gcd=(a*b)/lcm;
-	printf("GCD is %g.\n",gcd);
-	return 0;	
+	else{
+		printf("it is not an alphabet.\n");
+	}
+	return 0;
 
 }

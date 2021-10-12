@@ -1,14 +1,15 @@
-#include <stdio.h>
+#include<stdio.h>
 
-int main() {
-
-	int n = 2;
-
-	printf("Line: %d, n = %d\n", __LINE__, n);
-	while(n, printf("Line: %d, n = %d\n", __LINE__, n)) { //forever	
-	printf("Line: %d, n = %d\n", __LINE__, n--);
+int main()
+{
+	int n=8;
+	if (n%2==0){
+		printf("Number is even.\n");
+	}else{
+		printf("Number is odd.");
 	}
-	printf("Line: %d, n = %d\n", __LINE__, n);
-
 	return 0;
+
+
+
 }

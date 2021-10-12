@@ -1,14 +1,14 @@
 #include<stdio.h>
 int main()
 {
-	int a=13, b=18;
-	int max=a>b?a:b, lcm=max;
-
-	for ( ; ; lcm+=max){
-		if(lcm%a==0 && lcm%b==0)
-			break;
-	}
-	printf("lcm is %d.\n",lcm);
+	char ch='A';
+	if (ch>='A' && ch<='Z')
+		printf("the character is in uppercase.\n");
+	else if (ch>='a' && ch<='z')
+		printf("the character is in lowercase.\n");
+	else
+		printf("the character is not an alphabet.\n");
+	
 	return 0;
 
 }
