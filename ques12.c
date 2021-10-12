@@ -1,11 +1,12 @@
 #include<stdio.h>
 int main()
 {
-	double a=45, b=67,c=180-a-b;
-	if (a+b+c==180 && a>0 && b>0 && c>0){
-		printf("The triangle is valid.\n");
-	}else{
-		printf("The triangle is invalid.\n");
+	int i;
+	for(i=1;i<=10;i++)
+	{
+		int pro=8*i;
+		printf("8*%d= %d\n",i,pro);
 	}
+
 	return 0;
 }
