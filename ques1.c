@@ -1,14 +1,14 @@
-#include <stdio.h>
+#include<stdio.h>
 
-int main() {
-
-	int n = 2;
-
-	printf("Line: %d, n = %d\n", __LINE__, n);
-	while(printf("Line: %d, n = %d\n", __LINE__, n), n) {
-	printf("Line: %d, n = %d\n", __LINE__, n--);
-	}
-	printf("Line: %d, n = %d\n", __LINE__, n);
-
+double ar(double x){
+	double ar=(3.14*x*x)/4;
+	return ar;
+}
+int main()
+{
+	double d=2;
+	double a=ar(d);
+	printf("Area of circle is %g.\n",a);
 	return 0;
 }
+
