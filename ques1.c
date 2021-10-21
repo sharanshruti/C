@@ -1,14 +1,20 @@
-#include <stdio.h>
+#include<stdio.h>
+#define UPPER(x) (x >= 'A' && x <= 'Z')
 
-int main() {
+#define LOWER(x) (x >= 'a' && x <= 'z')
 
-	int n = 2;
-
-	printf("Line: %d, n = %d\n", __LINE__, n);
-	while(printf("Line: %d, n = %d\n", __LINE__, n), n) {
-	printf("Line: %d, n = %d\n", __LINE__, n--);
-	}
-	printf("Line: %d, n = %d\n", __LINE__, n);
+int main()
+{
+	char x='c';
+	if(UPPER(x))
+		printf("alphabet is in uppercase.\n");
+	else if(LOWER(x))
+		printf("alphabet is in lowercase.\n");
+	else
+		printf("entered character is not alphabet.\n");
 
 	return 0;
+
+
+
 }
