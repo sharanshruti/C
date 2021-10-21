@@ -1,14 +1,13 @@
-#include <stdio.h>
-
-int main() {
-
-	int n = 2;
-
-	printf("Line: %d, n = %d\n", __LINE__, n);
-	while(printf("Line: %d, n = %d\n", __LINE__, n), n) {
-	printf("Line: %d, n = %d\n", __LINE__, n--);
-	}
-	printf("Line: %d, n = %d\n", __LINE__, n);
-
+#include<stdio.h>
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	int a[n];
+	for(int i=0;i<n;i++)
+		scanf("%d",&a[i]);
+	for (int i=n-1;i>=0;i--)
+		printf("%d",a[i]);
+	printf("\n");
 	return 0;
 }
